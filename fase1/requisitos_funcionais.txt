@@ -1,0 +1,28 @@
+Requisitos Funcionais
+
+- Sistema de login
+- Cadastro/Criação de perfil
+- Disponibilizar assuntos por matérias
+- Alguns níveis são disponibilizados de acordo com desempenho do aluno no nível anterior (avaliado pelo teste de fase)
+- Cada matéria/assunto oferece tópicos que trazem questões sobre os subtópicos escolhidos. Essas questões são disponibilizadas também de acordo com o nível de estudo atingido pelo usuário.
+- Um usuário classificado como professor/administrador pode popular o banco de dados de questões.
+- Os usuários do sistema podem usar/alterar o banco de acordo com a permissão concedida.
+- A página inicial mosta imagens e mensagens de pessoas que são referência para os alunos
+- Existe um papel de coordenador que pode administrar o banco de questões no sentido de inclusão e exclusão em todos os assuntos.
+- Cada professor/voluntário pode incluir/excluir questões do assunto que ele ensina.
+- A página inicial mostra um feed com:
+	* Alunos em destaque (o aluno pode escolher aparecer). Esse destaque pode ser avaliado por semana.
+	* Publicação com mensagens para todos (todos para todos)
+	* Avisos de professores
+- Usuários podem avaliar questões
+- Usuários pode colocar comentários nas questões e nos vídeos no sentido de discutir as questões e caminhos para resoluções (fórum)
+- Todo usuário cadastrado tem um avatar que pode ser alterado segundo a sua evolução.
+- Cada questão pode pertencer a diferentes subtópicos
+- A questão tem uma resolução associada.
+- Os comentários e a resolução de cada questão ficam disponíveis após a tentativa de resolução.
+- O nível de crescimento/avatar depende diretamente do número de questões acertadas e dos videos assistidos.
+- Os avatares são disponibilizzados de acordo com a evolução em cada matéria. O avatar é uma média ponderada de cada matéria.
+- Cada matéria tem uma barra de energia / evolução. A evolução ou nível na matéria depende da evolução dessa barra de energia.
+- Na questão acertada, os pontos são direcionados a todas as categorias da questão.
+- O nível geral é determinado pelos avanços de nível em cada matéria.
+[ - Uma questão pode ter mais de uma categoria]
