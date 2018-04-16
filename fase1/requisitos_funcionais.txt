@@ -1,28 +1,52 @@
-Requisitos Funcionais
+## Usuários
+### Professor
+- Adiciona, exclui e altera questões, vídeos, temas e tópicos das disciplinas que lecionar.
+- Responde a dúvidas de alunos que forem postadas nos exercícios.
+- Publica avisos no _feed_
+- Cada professor está ligado a uma ou mais disciplinas.
+- Pode escolher qualquer avatar
+### Aluno
+ - Resolve exercícios.
+ - Assiste vídeos.
+ - Tem um nível relacionado a cada disciplina, tema e tópico
+ - Tem um avatar personalizável:
+     * Avatares são disponibilizados conforme o aluno atinge um determinado nível em um conjunto de temas/disciplinas. Por exemplo, para abrir o avatar de Arquimedes poderia ser necessário atingir nível 5 em Geometria Plana e nível 3 em Ótica.
+ - Dá nota a questões, e material didático.
+ - Comenta questões, no intuito de discutir métodos de resolução, tirar dúvidas, etc.
+### Administrador
+- Adiciona, exclui e altera questões, vídeos, temas e tópicos de qualquer disciplina.
+- Cadastra professores.
+- Pode escolher qualquer avatar
 
-- Sistema de login
-- Cadastro/Criação de perfil
-- Disponibilizar assuntos por matérias
-- Alguns níveis são disponibilizados de acordo com desempenho do aluno no nível anterior (avaliado pelo teste de fase)
-- Cada matéria/assunto oferece tópicos que trazem questões sobre os subtópicos escolhidos. Essas questões são disponibilizadas também de acordo com o nível de estudo atingido pelo usuário.
-- Um usuário classificado como professor/administrador pode popular o banco de dados de questões.
-- Os usuários do sistema podem usar/alterar o banco de acordo com a permissão concedida.
-- A página inicial mosta imagens e mensagens de pessoas que são referência para os alunos
-- Existe um papel de coordenador que pode administrar o banco de questões no sentido de inclusão e exclusão em todos os assuntos.
-- Cada professor/voluntário pode incluir/excluir questões do assunto que ele ensina.
-- A página inicial mostra um feed com:
-	* Alunos em destaque (o aluno pode escolher aparecer). Esse destaque pode ser avaliado por semana.
-	* Publicação com mensagens para todos (todos para todos)
-	* Avisos de professores
-- Usuários podem avaliar questões
-- Usuários pode colocar comentários nas questões e nos vídeos no sentido de discutir as questões e caminhos para resoluções (fórum)
-- Todo usuário cadastrado tem um avatar que pode ser alterado segundo a sua evolução.
-- Cada questão pode pertencer a diferentes subtópicos
-- A questão tem uma resolução associada.
-- Os comentários e a resolução de cada questão ficam disponíveis após a tentativa de resolução.
-- O nível de crescimento/avatar depende diretamente do número de questões acertadas e dos videos assistidos.
-- Os avatares são disponibilizzados de acordo com a evolução em cada matéria. O avatar é uma média ponderada de cada matéria.
-- Cada matéria tem uma barra de energia / evolução. A evolução ou nível na matéria depende da evolução dessa barra de energia.
-- Na questão acertada, os pontos são direcionados a todas as categorias da questão.
-- O nível geral é determinado pelos avanços de nível em cada matéria.
-[ - Uma questão pode ter mais de uma categoria]
+## Disciplinas, Temas e Tópicos
+ - Cada disciplina é divida em temas e cada tema em tópicos. Por exemplo, podemos ter uma disciplina 'Matemática', subdivida em um tema 'Geometria' e subdividido em um tópico 'Triângulos Isósceles'.
+ - O nível de um aluno em uma disciplina depende do seu nível nos temas e tópicos dela.
+ - Conforme o nível do aluno cresce em uma disciplina, tema e tópico novas questões, temas e tópicos são abertos. Assim, um aluno pode ter que atingir nível 3 no tópico 'Triângulos Retângulos' para abrir o tópico 'Triângulos Quaisquer' e suas questões.
+ - Além de conter questões, vídeos, livros e outros materiais didáticos também são disponibilizados para os alunos.
+
+## Questões
+ - Tem uma ou mais resoluções associada a ela.
+ - Pode pertencer a mais de uma disciplina, tema e tópico.
+ - Tem um nível de dificuldade, que será usado para determinar se um aluno deve ou não ter acesso a uma questão de acordo com o seu nível em um determinado tópico.
+ - Ao acertar uma questão, o aluno ganha pontos para cada tópico relacionado a questão. A quantidade de pontos ganha pode ser maior para um determinado tópico.
+ - Cada questão tem uma sessão de comentários de alunos, onde alunos poderão tirar dúvidas, discutir métodos de resolução e fazer perguntas. Tanto alunos quanto professores podem postar nesse espaço.
+ - A resolução de uma questão e seus comentários não devem estar visíveis por padrão (só aparecem depois que o aluno já respondeu a questão ou se clicar para aparecer).
+ - As alternativas de uma questão podem mudar de ordem e de valor. As questões também podem ficar mais difíceis colocando alternativas incorretas com valores mais plausíveis.
+
+## Níveis
+ - Para avançar um nível o aluno deve conseguir uma certa quantidade de pontos (através de questões).
+ - A quantidade de pontos para avançar um nível não é constante. Ou seja, avançar do nível 1 para o nível 2 pode ser mais fácil do que avançar do nível 9 para o nível 10.
+ - Como mencionado anteriormente, níveis estão associados a disciplinas, temas, tópicos e alunos.
+ 
+## Outras informações
+ - Qualquer um pode se cadastrar como aluno no sistema.
+ - Um usuário deve estar logado para ter acesso às disciplinas.
+ - Ao entrar no sistema, um aluno tem acesso tem acesso a um conjunto de questões e vídeos separados por disciplina. 
+ 
+### Página Inicial
+ - Tem uma lista das disciplinas e o progresso (nível) do aluno em cada uma delas.
+ - Contém um _feed_ com:
+    * Alunos em destaque (o aluno pode escolher aparecer). Esse destaque pode ser avaliado por semana.
+    * Publicações de alunos
+    * Avisos de professores (em destaque)
+ - A página inicial mostra imagens e mensagens motivacionais de pessoas que são referência para os alunos.
